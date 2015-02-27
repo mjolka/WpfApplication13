@@ -1,0 +1,13 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:viewModels="clr-namespace:WpfApplication13.ViewModels"
+        x:Class="WpfApplication13.Views.OptionsWindow"
+        Title="OptionsWindow" Height="300" Width="300">
+    <Window.DataContext>
+        <viewModels:OptionsViewModel/>
+    </Window.DataContext>
+    <Grid>
+        <Button Content="Close Options" VerticalAlignment="Center" HorizontalAlignment="Center" Padding="5" Command="{Binding CloseOptionsCommand}"></Button>
+    </Grid>
+</Window>
